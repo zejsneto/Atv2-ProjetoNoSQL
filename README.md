@@ -13,7 +13,7 @@ Além do script para a escrita dos dados no banco, faça as mesmas queries da at
 
 A entrega deverá ser o endereço de um repositório público no Github, sendo que o projeto pode conter até 3 pessoas da sua turma de laboratório.
 
-# Enunciado
+# Inserções do BD Relacional
 
 Inserções consideradas do banco relacional:
 
@@ -68,3 +68,17 @@ insert into time_slot values ('C', 'M', '11', '0', '11', '50');<br><br>
 insert into section values ('CS-190', '1', 'Spring', '2017', 'Taylor', '3128', 'E');<br>
 insert into classroom values ('Taylor', '3128', '70');<br>
 insert into time_slot values ('E', 'T', '10', '30', '11', '45 ');<br><br>
+
+# Inserções no MongoDB
+
+Inserções para o banco não relacional:
+
+**Student:**<br><br>
+
+**Instructor:**<br><br>
+
+**Department:**<br><br>
+
+**Course:**<br><br>
+
+**Section:**<br><br>
