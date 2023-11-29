@@ -1,5 +1,5 @@
 # Atv2-ProjetoNoSQL
-Atividade 2 - Projeto da matéria Tópicos Avançados de Banco de Dados da FEI.
+Atividade 2 - Projeto | Tópicos Avançados de Banco de Dados - [FEI](https://portal.fei.edu.br/).
 
 # Integrantes
 José Joaquim da Silva Neto - 22.221.013-0 <br>
