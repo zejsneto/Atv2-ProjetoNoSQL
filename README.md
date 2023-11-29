@@ -19,7 +19,7 @@ Inserções consideradas do banco relacional:
 
 **Student:**<br><br>
 insert into student values ('00128', 'Zhang', 'Comp. Sci.', '102');<br>
-insert into takes values ('00128', 'CS-101', '1', 'Fall', '2017', 'A');<br>
+insert into takes values ('00128', 'CS-101', '1', 'Spring', '2018', 'A');<br>
 insert into advisor values ('00128', '45565');<br><br>
 insert into student values ('12345', 'Shankar', 'Comp. Sci.', '32');<br>
 insert into takes values ('12345', 'CS-101', '1', 'Fall', '2017', 'C');<br>
