@@ -42,8 +42,8 @@ insert into teaches values ('76543', 'FIN-201', '1', 'Spring', '2018');<br>
 insert into advisor values ('23121', '76543');<br><br>
 
 **Department:**<br><br>
-insert into department values ('Comp. Sci.', 'Taylor', '100000');<br>
-insert into department values ('Elec. Eng.', 'Taylor', '85000');<br>
+insert into department values ('Comp. Sci.', 'Taylor', '100000');<br><br>
+insert into department values ('Elec. Eng.', 'Taylor', '85000');<br><br>
 insert into department values ('Finance', 'Painter', '120000');<br><br>
 
 **Course:**<br><br>
