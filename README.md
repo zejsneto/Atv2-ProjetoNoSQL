@@ -87,8 +87,8 @@ Inserções para o banco não relacional:
     {
     "course_id": "CS-101",
     "sec_id": "1",
-    "semester": "Fall",
-    "year": "2017",
+    "semester": "Spring",
+    "year": "2018",
     "grade": "A"
     }
   ]
