@@ -62,7 +62,7 @@ insert into course values ('CS-315', 'Robotics', 'Comp. Sci.', '3');<br>
 insert into prereq values ('CS-315', 'CS-101');<br><br>
 
 insert into course values ('CS-101', 'Intro. to Computer Science', 'Comp. Sci.', '4');<br>
---sem prereq
+sem prereq
 
 **Section:**<br><br>
 insert into section values ('CS-101', '1', 'Fall', '2017', 'Packard', '101', 'H');<br>
