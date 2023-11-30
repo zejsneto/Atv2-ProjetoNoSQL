@@ -381,8 +381,8 @@ Queries da atividade 1 refeitas para o banco não relacional:
 
 **Query 2: Escreva uma query que retorna qual sala (prédio e número) cada professor dá aula?**<br><br>
 
-**Query 3: Escreva uma query que retorna qual o nome, orçamento, total de alunos e salário médio de cada departamento?**<br><br>
-([
+**Query 3: Escreva uma query que retorna qual o nome, orçamento, total de alunos e salário médio de cada departamento?**<br>
+<br>([
   {
     $lookup: {
       from: "student",
