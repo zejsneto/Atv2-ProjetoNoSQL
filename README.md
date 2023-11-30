@@ -41,6 +41,10 @@ insert into instructor values ('76543', 'Singh', 'Finance', '80000');<br>
 insert into teaches values ('76543', 'FIN-201', '1', 'Spring', '2018');<br>
 insert into advisor values ('23121', '76543');<br><br>
 
+insert into instructor values ('98345', 'Kim', 'Elec. Eng.', '80000');<br>
+insert into teaches values ('98345', 'EE-181', '1', 'Spring', '2017');<br>
+insert into advisor values ('76653', '98345');<br><br>
+
 **Department:**<br><br>
 insert into department values ('Comp. Sci.', 'Taylor', '100000');<br><br>
 insert into department values ('Elec. Eng.', 'Taylor', '85000');<br><br>
@@ -191,6 +195,25 @@ Inserções para o banco não relacional:
     "sec_id": "1",
     "semester": "Spring",
     "year": "2018"}
+  ]
+}
+
+{
+  "_id": {
+    "$oid": "6542e06f88b47a69ec2aac8c"
+  },
+  "instructorId": "98345",
+  "name": "Kim",
+  "dept_name": "Elec. Eng.",
+  "salary": "80000",
+  "students": [
+    {"s_id":"76653"}
+  ],
+  "teaches": [
+    {"course_id": "EE-181",
+    "sec_id": "1",
+    "semester": "Spring",
+    "year": "2017"}
   ]
 }
 
