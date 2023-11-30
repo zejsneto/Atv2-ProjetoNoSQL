@@ -61,6 +61,9 @@ insert into prereq values ('CS-190', 'CS-101');<br><br>
 insert into course values ('CS-315', 'Robotics', 'Comp. Sci.', '3');<br>
 insert into prereq values ('CS-315', 'CS-101');<br><br>
 
+insert into course values ('CS-101', 'Intro. to Computer Science', 'Comp. Sci.', '4');
+--sem prereq
+
 **Section:**<br><br>
 insert into section values ('CS-101', '1', 'Fall', '2017', 'Packard', '101', 'H');<br>
 insert into classroom values ('Packard', '101', '500');<br>
@@ -291,6 +294,8 @@ Inserções para o banco não relacional:
   }
   ]
 }
+
+{"_id":{"$oid":"6567e539e4fef51357d2b0fc"},"course_id":"CS-101","title":"Intro. to Computer Science","dept_name":"Comp. Sci.","credits":"4","prereq":[{"prereq_id":""}]}
 
 **Section:**<br><br>
 {
