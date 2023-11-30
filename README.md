@@ -377,11 +377,11 @@ Inserções para o banco não relacional:
 
 Queries da atividade 1 refeitas para o banco não relacional:
 
-**Query 1: Escreva uma query que retorna qual estudante fez qual disciplina do próprio orientador. Retorne apenas o nome do estudante, do professor e da disciplina.**<br>
+**Query 1: Escreva uma query que retorna qual estudante fez qual disciplina do próprio orientador. Retorne apenas o nome do estudante, do professor e da disciplina.**<br><br>
 
-**Query 2: Escreva uma query que retorna qual sala (prédio e número) cada professor dá aula?**<br>
+**Query 2: Escreva uma query que retorna qual sala (prédio e número) cada professor dá aula?**<br><br>
 
-**Query 3: Escreva uma query que retorna qual o nome, orçamento, total de alunos e salário médio de cada departamento?**<br>
+**Query 3: Escreva uma query que retorna qual o nome, orçamento, total de alunos e salário médio de cada departamento?**<br><br>
 ([
   {
     $lookup: {
