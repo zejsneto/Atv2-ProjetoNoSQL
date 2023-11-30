@@ -1,5 +1,6 @@
 # Atv2-ProjetoNoSQL
-Atividade 2 - Projeto | Tópicos Avançados de Banco de Dados - [FEI](https://portal.fei.edu.br/).
+Atividade 2 - Projeto | Tópicos Avançados de Banco de Dados - [FEI](https://portal.fei.edu.br/). <br>
+Para a atividade 2 temos 2 arquivos neste repositório, um contendo as inserções no MongoDB e outro contendo as queries da Atividade 1. Abaixo também há um resumo de tudo feito neste README.
 
 # Integrantes
 José Joaquim da Silva Neto - 22.221.013-0 <br>
