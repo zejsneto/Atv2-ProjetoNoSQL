@@ -377,9 +377,82 @@ Inserções para o banco não relacional:
 
 Queries da atividade 1 refeitas para o banco não relacional:
 
-**Query 1: Escreva uma query que retorna qual estudante fez qual disciplina do próprio orientador. Retorne apenas o nome do estudante, do professor e da disciplina.**<br><br>
+**Query 1: Escreva uma query que retorna qual estudante fez qual disciplina do próprio orientador. Retorne apenas o nome do estudante, do professor e da disciplina.**<br>
+<br>
+([
+  {
+    $lookup: {
+      from: "instructor",
+      localField: "advisor",
+      foreignField: "instructorId",
+      as: "advisorInfo"
+    }
+  },
+  {
+    $unwind: "$takes"
+  },
+  {
+    $lookup: {
+      from: "course",
+      localField: "takes.course_id",
+      foreignField: "course_id",
+      as: "courseInfo"
+    }
+  },
+  {
+    $unwind: {
+      path: "$courseInfo",
+      preserveNullAndEmptyArrays: true
+    }
+  },
+  {
+    $unwind: "$advisorInfo"
+  },
+  {
+    $project: {
+      _id: 0,
+      student_name: "$name",
+      advisor_name: "$advisorInfo.name",
+      course_title: { $ifNull: ["$courseInfo.title", "N/A"] }
+    }
+  }
+])
+<br>
 
-**Query 2: Escreva uma query que retorna qual sala (prédio e número) cada professor dá aula?**<br><br>
+**Query 2: Escreva uma query que retorna qual sala (prédio e número) cada professor dá aula?**<br>
+<br>
+([
+  {
+    $unwind: {
+      path: "$teaches",
+      preserveNullAndEmptyArrays: true
+    }
+  },
+  {
+    $lookup: {
+      from: "section",
+      localField: "teaches.course_id",
+      foreignField: "course_id",
+      as: "courseSection"
+    }
+  },
+  {
+    $unwind: {
+      path: "$courseSection",
+      preserveNullAndEmptyArrays: true
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      instructorId: 1,
+      name: 1,
+      course_id: "$teaches.course_id",
+      classroom: { $ifNull: ["$courseSection.classroom", "N/A"] }
+    }
+  }
+])
+<br>
 
 **Query 3: Escreva uma query que retorna qual o nome, orçamento, total de alunos e salário médio de cada departamento?**<br>
 <br>([
